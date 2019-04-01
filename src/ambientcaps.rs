@@ -1,7 +1,13 @@
+#[macro_use]
+extern crate error_chain;
+extern crate libc;
+
 use caps::*;
 use lubeck::{LinuxCapabilities, LinuxCapabilityType};
 use errno;
+use bindings::linux;
 use libc;
+
 
 use super::Capability;
 use errors::*;
